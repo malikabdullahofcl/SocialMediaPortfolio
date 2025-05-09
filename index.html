@@ -5,38 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Home Section -->
+    <!-- Header Section -->
     <header>
         <h1>Welcome to My Portfolio</h1>
         <p>Hi, I'm Muhammad—a passionate social media marketer.</p>
         <a href="#portfolio" class="btn">Discover My Work</a>
     </header>
 
-    <!-- About Me -->
+    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
         <p>I am a dedicated social media marketer with fresh insights into digital marketing.</p>
     </section>
 
-    <!-- Services -->
+    <!-- Services Section -->
     <section id="services">
         <h2>Services</h2>
-        <p>I provide social media strategy, content creation, campaign management, and brand promotion.</p>
+        <div class="service-container">
+            <div class="service-item">
+                <h3>Social Media Strategy</h3>
+                <p>Creating effective strategies to boost engagement and brand awareness.</p>
+            </div>
+            <div class="service-item">
+                <h3>Content Creation</h3>
+                <p>Designing high-quality content tailored for different platforms.</p>
+            </div>
+            <div class="service-item">
+                <h3>Campaign Management</h3>
+                <p>Running targeted campaigns to maximize reach and conversions.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Portfolio -->
+    <!-- Portfolio Section -->
     <section id="portfolio">
         <h2>Portfolio</h2>
-        <p>Here are some projects showcasing my strategic approach and results-driven mindset.</p>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h3>Social Media Growth Strategy</h3>
+                <p>Implemented a strategy that increased engagement by 200%.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h3>Brand Awareness Campaign</h3>
+                <p>Designed a campaign that boosted brand visibility.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/project3.jpg" alt="Project 3">
+                <h3>Influencer Collaboration</h3>
+                <p>Worked with influencers to expand audience reach.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Reach out via email: <strong>your-email@example.com</strong></p>
+        <form action="https://formspree.io/f/yourformid" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <script src="script.js"></script>
